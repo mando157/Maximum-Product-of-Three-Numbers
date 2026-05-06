@@ -15,7 +15,7 @@ The maximum product can come from:
 
 ## Algorithms Used
 
-### 1. Iterative Approach (Greedy)
+### 1. Iterative Approach
 - Track:
   - Top 3 maximum values
   - Bottom 2 minimum values
