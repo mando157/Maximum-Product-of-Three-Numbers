@@ -26,18 +26,7 @@ The maximum product can come from:
 
 ---
 
-### 2. Sorting Approach
-- Sort the array
-- Compare:
-  - Last 3 elements
-  - First 2 elements × last element
-
-**Time Complexity:** O(n log n)  
-**Space Complexity:** O(1)
-
----
-
-### 3. Recursive Approach (Brute Force)
+### 2. Recursive Approach
 - Try all combinations of picking 3 elements
 
 **Time Complexity:** O(2^n)  
@@ -50,6 +39,5 @@ The maximum product can come from:
 | Approach   | Time Complexity |
 |------------|-----------------|
 | Iterative  | O(n)            |
-| Sorting    | O(n log n)      |
 | Recursive  | O(2^n)          |
 
