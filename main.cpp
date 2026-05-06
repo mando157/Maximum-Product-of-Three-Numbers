@@ -71,11 +71,27 @@ long long maxProductSorting(vector<int>& a) {
 
 int main()
 {
-    vector<int> a = {-10, -10, 5, 2};
+    vector<int> a = {2, 3, 4};
+    vector<int> b = {6, 7, 8, 10};
+    vector<int> c = {-10, -10, 5, 2};
 
-    cout << "Iterative: " << maxProductIterative(a) << endl;
-    cout << "Sorting: " << maxProductSorting(a) << endl;
-    cout << "Recursive: " << maxProductRecursive(a, 0, 0, 1) << endl;
+    cout << "a:"<< endl;
+    cout << " Iterative: " << maxProductIterative(a) << endl;
+    cout << " Sorting: " << maxProductSorting(a) << endl;
+    cout << " Recursive: " << maxProductRecursive(a, 0, 0, 1) << endl;
 
+    cout << "____________________________"<< endl;
+
+    cout << "b:"<< endl;
+    cout << " Iterative: " << maxProductIterative(b) << endl;
+    cout << " Sorting: " << maxProductSorting(b) << endl;
+    cout << " Recursive: " << maxProductRecursive(b, 0, 0, 1) << endl;
+
+    cout << "____________________________"<< endl;
+
+    cout << "c:"<< endl;
+    cout << " Iterative: " << maxProductIterative(c) << endl;
+    cout << " Sorting: " << maxProductSorting(c) << endl;
+    cout << " Recursive: " << maxProductRecursive(c, 0, 0, 1) << endl;
     return 0;
 }
