@@ -55,20 +55,6 @@ long long maxProductRecursive(vector<int>& a, int i, int count, long long produc
 }
 
 
-// <<<<<<<<<< Sorting >>>>>>>>>>
-
-long long maxProductSorting(vector<int>& a) {
-    sort(a.begin(), a.end());
-    int n = a.size();
-
-    long long p1 = 1LL * a[n-1] * a[n-2] * a[n-3];
-    long long p2 = 1LL * a[0] * a[1] * a[n-1];
-
-    return max(p1, p2);
-}
-
-
-
 int main()
 {
     vector<int> a = {2, 3, 4};
@@ -77,21 +63,18 @@ int main()
 
     cout << "a:"<< endl;
     cout << " Iterative: " << maxProductIterative(a) << endl;
-    cout << " Sorting: " << maxProductSorting(a) << endl;
     cout << " Recursive: " << maxProductRecursive(a, 0, 0, 1) << endl;
 
     cout << "____________________________"<< endl;
 
     cout << "b:"<< endl;
     cout << " Iterative: " << maxProductIterative(b) << endl;
-    cout << " Sorting: " << maxProductSorting(b) << endl;
     cout << " Recursive: " << maxProductRecursive(b, 0, 0, 1) << endl;
 
     cout << "____________________________"<< endl;
 
     cout << "c:"<< endl;
     cout << " Iterative: " << maxProductIterative(c) << endl;
-    cout << " Sorting: " << maxProductSorting(c) << endl;
     cout << " Recursive: " << maxProductRecursive(c, 0, 0, 1) << endl;
     return 0;
 }
