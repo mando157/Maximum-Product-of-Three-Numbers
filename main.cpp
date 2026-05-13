@@ -1,10 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <climits>
+<<<<<<< HEAD
 #include <algorithm>
 using namespace std;
 
 //  Bubble Sort 
+=======
+using namespace std;
+
+//  Bubble Sort
+>>>>>>> 53743b1 (updating code)
 void bubbleSort(vector<int>& a) {
     int n = a.size();
     for (int i = 0; i < n - 1; i++) {
@@ -18,7 +24,11 @@ void bubbleSort(vector<int>& a) {
     }
 }
 
+<<<<<<< HEAD
 // Sorting 
+=======
+// Sorting
+>>>>>>> 53743b1 (updating code)
 long long maxProductSorting(vector<int> a) {
     bubbleSort(a);
     int n = a.size();
@@ -27,7 +37,11 @@ long long maxProductSorting(vector<int> a) {
     return max(product1, product2);
 }
 
+<<<<<<< HEAD
 //  Iterative 
+=======
+//  Iterative
+>>>>>>> 53743b1 (updating code)
 long long maxProductIterative(vector<int>& a) {
     int max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;
     int min1 = INT_MAX, min2 = INT_MAX;
@@ -43,7 +57,11 @@ long long maxProductIterative(vector<int>& a) {
     return max(p1, p2);
 }
 
+<<<<<<< HEAD
 // Recursive 
+=======
+// Recursive
+>>>>>>> 53743b1 (updating code)
 long long maxProductRecursive(vector<int>& a, int i, int count, long long product) {
     if (count == 3) return product;
     if (i == (int)a.size()) return LLONG_MIN;
@@ -61,16 +79,27 @@ int main() {
     cout << "  Sorting:   " << maxProductSorting(a)            << endl;
     cout << "  Iterative: " << maxProductIterative(a)          << endl;
     cout << "  Recursive: " << maxProductRecursive(a, 0, 0, 1) << endl;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 53743b1 (updating code)
 
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 53743b1 (updating code)
     cout << "b {6,7,8,10}:" << endl;
     cout << "  Sorting:   " << maxProductSorting(b)            << endl;
     cout << "  Iterative: " << maxProductIterative(b)          << endl;
     cout << "  Recursive: " << maxProductRecursive(b, 0, 0, 1) << endl;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 53743b1 (updating code)
 
 
 
